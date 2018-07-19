@@ -109,5 +109,8 @@
 		line-height: .44rem;
 		text-align: center;
 		color:#212121;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 </style>
