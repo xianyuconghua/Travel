@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="Recommend-title">热销推荐</div>
+		<div class="title">热销推荐</div>
 		<ul>
 			<li class="item border-bottom" v-for="item in recommendList" :key="item.id">
 				<img class="item-img" :src="item.imgUrl" alt="">
@@ -18,7 +18,7 @@
 	export default{
 		name: 'HomeRecommend',
 		data() {
-			return {
+			return {				
 				recommendList: [{
 					id: '0001',
 					imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/cb/cbdf4d307562f6e6a3.water.jpg_200x200_b0adf528.jpg',
@@ -46,11 +46,12 @@
 </script>
 
 <style scoped>
-	.Recommend-title{
+	.title{
 		line-height: .8rem;
-		background:#eee;
+		background:#f6f6f6;
 		text-indent:.2rem;
 		margin-top: .2rem;
+		font-size: .32rem;
 	}
 	.item{
 		display: flex;
