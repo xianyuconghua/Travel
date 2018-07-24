@@ -2,7 +2,7 @@
 	<div>
 		<div class="title">热销推荐</div>
 		<ul>
-			<li class="item border-bottom" v-for="item in recommendList" :key="item.id">
+			<li class="item border-bottom" v-for="item in list" :key="item.id">
 				<img class="item-img" :src="item.imgUrl" alt="">
 				<div class="item-info">
 					<p class="item-title">{{item.title}}</p>
@@ -17,31 +17,34 @@
 <script>
 	export default{
 		name: 'HomeRecommend',
-		data() {
-			return {				
-				recommendList: [{
-					id: '0001',
-					imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/cb/cbdf4d307562f6e6a3.water.jpg_200x200_b0adf528.jpg',
-					title: '园博园欢乐世界',
-					desc: '园博园欢乐世界水上乐园园博园欢乐世界园博园欢乐世界'
-				},{
-					id: '0002',
-					imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/cb/cbdf4d307562f6e6a3.water.jpg_200x200_b0adf528.jpg',
-					title: '园博园欢乐世界',
-					desc: '园博园欢乐世界水上乐园园博园欢乐世界园博园欢乐世界'
-				},{
-					id: '0003',
-					imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/cb/cbdf4d307562f6e6a3.water.jpg_200x200_b0adf528.jpg',
-					title: '园博园欢乐世界',
-					desc: '园博园欢乐世界水上乐园园博园欢乐世界园博园欢乐世界'
-				},{
-					id: '0004',
-					imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/cb/cbdf4d307562f6e6a3.water.jpg_200x200_b0adf528.jpg',
-					title: '园博园欢乐世界',
-					desc: '园博园欢乐世界水上乐园园博园欢乐世界园博园欢乐世界'
-				}]
-			}
-		}
+		props: {
+			list: Array
+		},
+		// data() {
+		// 	return {				
+		// 		recommendList: [{
+		// 			id: '0001',
+		// 			imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/cb/cbdf4d307562f6e6a3.water.jpg_200x200_b0adf528.jpg',
+		// 			title: '园博园欢乐世界',
+		// 			desc: '园博园欢乐世界水上乐园园博园欢乐世界园博园欢乐世界'
+		// 		},{
+		// 			id: '0002',
+		// 			imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/cb/cbdf4d307562f6e6a3.water.jpg_200x200_b0adf528.jpg',
+		// 			title: '园博园欢乐世界',
+		// 			desc: '园博园欢乐世界水上乐园园博园欢乐世界园博园欢乐世界'
+		// 		},{
+		// 			id: '0003',
+		// 			imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/cb/cbdf4d307562f6e6a3.water.jpg_200x200_b0adf528.jpg',
+		// 			title: '园博园欢乐世界',
+		// 			desc: '园博园欢乐世界水上乐园园博园欢乐世界园博园欢乐世界'
+		// 		},{
+		// 			id: '0004',
+		// 			imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/cb/cbdf4d307562f6e6a3.water.jpg_200x200_b0adf528.jpg',
+		// 			title: '园博园欢乐世界',
+		// 			desc: '园博园欢乐世界水上乐园园博园欢乐世界园博园欢乐世界'
+		// 		}]
+		// 	}
+		// }
 	}
 </script>
 
