@@ -1,6 +1,13 @@
 <template>
-	<div class="search">
-		<input class="search-input" type="text" placeholder="输入城市名或拼音">
+	<div>
+		<div class="search">
+			<input class="search-input" type="text" placeholder="输入城市名或拼音">
+		</div>
+		<div class="search-content">
+			<ul>
+				<li>123</li>
+			</ul>
+		</div>
 	</div>
 </template>
 
@@ -22,6 +29,9 @@ export default {
 		line-height: .62rem;
 		text-align: center;
 		border-radius: .06rem;
+	}
+	.search-content{
+		
 	}
 	
 </style>
